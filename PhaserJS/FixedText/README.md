@@ -6,5 +6,27 @@ Phaser 패키지의 오브젝트 중 하나인 [Phaser.GameObjects.Text](https:/
 
 오브젝트의 폰트 크기는 기본 fontSize값대로 적용하되, 지정한 가로, 세로 크기를 초과할 경우 자동으로 폰트 크기가 감소합니다.
 
-![FixedText0](https://user-images.githubusercontent.com/127966719/226830828-077afbb5-db1b-4baf-81d8-f3b4852e09ec.png)
+```javascript
+create() {
+    const button0 = new SpriteButton(this, 200, 200, "phaser-logo", null, {
+        pointerdown: () => {
+            console.log("pointerdown");
+        },
+        pointerup: (pointer, localX, localY) => {
+            console.log(localX, localY);
+        },
+    });
+
+    const button1 = new RectButton(this, 400, 200, 80, 80, {
+        pointerover: () => {
+            button1.setAlpha(0.5);
+        },
+        pointerout: () => {
+            button1.setAlpha(1);
+        }
+    });
+    button1.setFillStyle(0xff0000, 1)
+}
+```
+
 ![FixedText1](https://user-images.githubusercontent.com/127966719/226830834-7d9ea73d-ec10-46e0-bca3-c20b88ebd70d.png)
