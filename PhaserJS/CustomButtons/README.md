@@ -11,6 +11,27 @@ __RectButton__ 은 [Phaser.GameObjects.Rectangle](https://photonstorm.github.io/
 
 클릭 시작할 때, 클릭 종료할 때, 오브젝트 위로 포인터가 올라가거나 내려갈 때 등등 이벤트를 걸 수 있는 기능이 있습니다.
 
-![CustomButtons0](https://user-images.githubusercontent.com/127966719/226837821-1c8eba36-d47c-4e0c-8cd3-f2cd9e4cd66d.png)
+```javascript
+create() {
+    const button0 = new SpriteButton(this, 200, 200, "phaser-logo", null, {
+        pointerdown: () => {
+            console.log("pointerdown");
+        },
+        pointerup: (pointer, localX, localY) => {
+            console.log(localX, localY);
+        },
+    });
+
+    const button1 = new RectButton(this, 400, 200, 80, 80, {
+        pointerover: () => {
+            button1.setAlpha(0.5);
+        },
+        pointerout: () => {
+            button1.setAlpha(1);
+        }
+    });
+    button1.setFillStyle(0xff0000, 1)
+}
+```
 
 ![CustomButtons0](https://user-images.githubusercontent.com/127966719/226838421-a7f2174a-8ada-4c1b-ab43-0ba6c019fa29.gif)
