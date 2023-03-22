@@ -1,8 +1,6 @@
 import FixedText from 'FixedText'
 
 export default class FixedText_TestScene extends Phaser.Scene {
-    fpsText
-
     constructor() {
         super({ key: 'TestScene' })
     }
