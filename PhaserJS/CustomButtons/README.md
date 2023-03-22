@@ -9,7 +9,7 @@ __RectButton__ 은 [Phaser.GameObjects.Rectangle](https://photonstorm.github.io/
 두 오브젝트 모두 [Notes of Phaser 3](https://rexrainbow.github.io/phaser3-rex-notes/docs/site/)의
 [Touch events](https://rexrainbow.github.io/phaser3-rex-notes/docs/site/touchevents/) 문서를 참조하여 상호작용 기능을 개발하였습니다.
 
-클릭 시작할 때, 클릭 종료할 때, 오브젝트 위로 포인터가 올라가거나 내려갈 때 등등 이벤트를 걸 수 있는 버튼 오브젝트들입니다.
+클릭 시작할 때, 클릭 종료할 때, 오브젝트 위로 포인터가 올라가거나 내려갈 때 등등 이벤트를 걸 수 있는 기능이 있습니다.
 
 ![CustomButtons0](https://user-images.githubusercontent.com/127966719/226837821-1c8eba36-d47c-4e0c-8cd3-f2cd9e4cd66d.png)
 
