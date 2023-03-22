@@ -8,24 +8,56 @@ Phaser 패키지의 오브젝트 중 하나인 [Phaser.GameObjects.Text](https:/
 
 ```javascript
 create() {
-    const button0 = new SpriteButton(this, 200, 200, "phaser-logo", null, {
-        pointerdown: () => {
-            console.log("pointerdown");
-        },
-        pointerup: (pointer, localX, localY) => {
-            console.log(localX, localY);
-        },
-    });
+    const rect0 = this.add.rectangle(200, 100, 100, 80);
+    rect0.setOrigin(0.5, 0.5);
+    rect0.setStrokeStyle(2, 0xff0000, 1);
 
-    const button1 = new RectButton(this, 400, 200, 80, 80, {
-        pointerover: () => {
-            button1.setAlpha(0.5);
-        },
-        pointerout: () => {
-            button1.setAlpha(1);
+    const text0 = new FixedText(this, {
+        x: rect0.x,
+        y: rect0.y,
+        width: rect0.width,
+        height: rect0.height,
+        text: "This is test comment",
+        style: {
+            color: "#000000",
+            fontSize: '24px',
         }
     });
-    button1.setFillStyle(0xff0000, 1)
+    text0.setOrigin(0.5, 0.5);
+
+    const rect1 = this.add.rectangle(200, 200, 200, 80);
+    rect1.setOrigin(0.5, 0.5);
+    rect1.setStrokeStyle(2, 0xff0000, 1);
+
+    const text1 = new FixedText(this, {
+        x: rect1.x,
+        y: rect1.y,
+        width: rect1.width,
+        height: rect1.height,
+        text: "This is test comment",
+        style: {
+            color: "#000000",
+            fontSize: '24px',
+        }
+    });
+    text1.setOrigin(0.5, 0.5);
+
+    const rect2 = this.add.rectangle(200, 300, 300, 80);
+    rect2.setOrigin(0.5, 0.5);
+    rect2.setStrokeStyle(2, 0xff0000, 1);
+
+    const text2 = new FixedText(this, {
+        x: rect2.x,
+        y: rect2.y,
+        width: rect2.width,
+        height: rect2.height,
+        text: "This is test comment",
+        style: {
+            color: "#000000",
+            fontSize: '24px',
+        }
+    });
+    text2.setOrigin(0.5, 0.5);
 }
 ```
 
