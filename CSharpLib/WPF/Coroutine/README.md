@@ -1,5 +1,9 @@
 # Coroutine
 
+[유니티의 Coroutine](https://docs.unity3d.com/kr/2021.3/Manual/Coroutines.html)을 보고 만든 시스템입니다.
+
+함수(SubRoutine)의 진행을 __YieldCondition__ 들로 중지할 수 있으며, 이를 통해 비동기 처리를 통한 애니메이션, 연출, 동작이 가능합니다.
+
 ```xaml
 <Window x:Class="MainWindow"
         xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
