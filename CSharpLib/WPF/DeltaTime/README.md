@@ -1,5 +1,9 @@
 # DeltaTime
 
+이전 프레임과 다음 프레임 사이의 걸린 시간을 구할 수 있는 __static class__ 입니다.
+
+연산에 __DeltaTime__ 을 곱하여 사용자의 프레임과 상관없이 동일한 시간동안 처리할 수 있습니다.
+
 ```xaml
 <Window x:Class="MainWindow"
         xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
